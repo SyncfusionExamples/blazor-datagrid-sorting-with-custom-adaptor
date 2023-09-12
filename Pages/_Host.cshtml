@@ -1,5 +1,6 @@
-﻿@using Microsoft.AspNetCore.Components.Web
-@namespace SortingWithCustomAdaptor.Pages
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Web
+@namespace SortCustomAdaptor.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
@@ -10,13 +11,14 @@
     <base href="~/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
-    <link href="SortingWithCustomAdaptor.styles.css" rel="stylesheet" />
+    <link href="SortCustomAdaptor.styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link href="_content/Syncfusion.Blazor.Themes/bootstrap5.css" rel="stylesheet" />
+    <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
-     <link href="https://cdn.syncfusion.com/blazor/20.2.38/styles/fluent.css" rel="stylesheet" />
-    <script src="https://cdn.syncfusion.com/blazor/20.2.38/syncfusion-blazor.min.js" type="text/javascript"></script>
 </head>
 <body>
-    @RenderBody()
+    <component type="typeof(App)" render-mode="ServerPrerendered" />
 
     <div id="blazor-error-ui">
         <environment include="Staging,Production">

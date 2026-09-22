@@ -2,7 +2,7 @@
 
 ## Overview
 
-This sample demonstrates how to perform sorting operations in the Syncfusion Blazor DataGrid while using a custom data adaptor. Instead of relying on a built-in data source, the DataGrid uses an `SfDataManager` configured with a custom adaptor that extends the `DataAdaptor` class. The sample shows how DataGrid sorting requests can be processed manually inside the adaptor by handling sort actions within the overridden `Read` method. This approach is useful when data must be processed through custom business logic, external services, or non-standard data sources while still supporting the built-in DataGrid sorting experience.
+This sample demonstrates how to perform sorting operations in the Syncfusion [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) while using a custom data adaptor. Instead of relying on a built-in data source, the DataGrid uses an `SfDataManager` configured with a custom adaptor that extends the `DataAdaptor` class. The sample shows how DataGrid sorting requests can be processed manually inside the adaptor by handling sort actions within the overridden `Read` method. This approach is useful when data must be processed through custom business logic, external services, or non-standard data sources while still supporting the built-in DataGrid sorting experience.
 
 ## Key Features
 
